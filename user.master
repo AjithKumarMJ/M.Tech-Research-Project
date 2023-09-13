@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="user" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Hosting Co.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="container">
+  <div id="incontainer">
+    <div id="header"> <img src="images/logo.jpg" width="226" height="77" alt="" id="logo" />
+      <ul class="menu">
+        <li class="btn_1"><a href="userprofile.aspx">Home</a></li>
+        <li class="btn_21"><a href="domainreg.aspx">Domain register</a></li>
+        <li class="btn_22"><a href="sitestatus.aspx">Domain status</a></li>
+        <li class="btn_23"><a href="createsite.aspx">File upload</a></li>
+         <li class="btn_26"><a href="browse.aspx">Browse</a></li>
+        <li class="btn_25"><a href="home.aspx">Logout</a></li>
+      </ul>
+    </div>
+    <div id="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    
+    </div>
+    <div id="footer">
+      <p><a href="#">HOME PAGE</a> | <a href="#">ABOUT US</a> | <a href="#">HOSTING</a> | <a href="#">SOLUTIONS</a> | <a href="#">SUPPORT</a> | <a href="#">NEWS</a> | <a href="#">CONTACTS</a><br/>
+        Copyright &copy; Your Company Name | Design by <a href="#">Website Templates</a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+component
+
+import android.content.Context
+import android.util.AttributeSet
+import android.view.View
+import android.widget.FrameLayout
+import android.widget.ImageView
+import android.widget.TextView
+import com.example.myapplication.R
+import com.example.myapplication.extension.inflate
+import com.example.myapplication.extension.loadUrl
+import com.example.myapplication.model.Movie
+import kotlinx.android.synthetic.main.movie_item.view.*
+
+class MovieItemView @JvmOverloads constructor(
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
+) : FrameLayout(context, attrs, defStyleAttr) {
+
+    private val movieImage: ImageView
+    private val movieTitle: TextView
+    private val movieRating: TextView
+
+    init {
+        inflate(R.layout.movie_item, true)
+        movieImage = movie_image
+        movieTitle = movie_title
+        movieRating = movie_rating
+    }
+
+    fun bind(movie

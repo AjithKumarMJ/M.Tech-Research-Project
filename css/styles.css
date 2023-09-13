@@ -1,0 +1,133 @@
+/* CSS Document */
+body{padding:0px; margin:0px; background:#19242a; color:#FFF; font:10px/14px Tahoma, sans-serif;}
+div, p, ul, h2, h3, h4, img{padding:0px; margin:0px;}
+ul{list-style-type:none;}
+
+.clear {clear: both; margin: 0px; height:0}
+
+.headline{font:10px/14px Tahoma, sans-serif; color:#FFF; font-weight:bold}
+
+#container{width:775px; position:relative; margin:0 auto; border:#FFF 1px solid}
+
+#incontainer{width:716px; position:relative; margin:0 auto;}
+
+/* HEADER */
+
+#header{width:716px; height:278px; position:relative; background:url(../images/b_header.jpg) 0 0 no-repeat}
+#header img#logo{position:absolute; top:60px; left:41px}
+
+
+#header ul.menu{position:absolute; top:218px; left:15px; width:703px
+}
+#header ul.menu li{height:19px; margin-right:0px; 
+float:left;
+	width: 140px;
+}
+#header ul.menu li a{height:19px; display:block; text-indent:-20000px; }
+#header ul.menu li a:hover{height:19px;}
+
+#header ul.menu li.btn_1 a{width:49px; 
+background:url(../images/btn_1.gif) 0 0 no-repeat;
+	margin-right: 0px;
+}
+#header ul.menu li.btn_1 a:hover{width:47px; background:url(../images/btn_1_over.gif) 0 0 no-repeat;}
+
+#header ul.menu li.btn_12 a{width:53px; background:url(../images/btn_12a.png) 0 0 no-repeat; }
+#header ul.menu li.btn_12 a:hover{width:53px; background:url(../images/btn_12.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_13 a{width:95px; background:url(../images/btn_13a.png) 0 0 no-repeat; }
+#header ul.menu li.btn_13 a:hover{width:95px; background:url(../images/btn_13.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_14 a{width:68px; background:url(../images/btn_14a.png) 0 0 no-repeat; }
+#header ul.menu li.btn_14 a:hover{width:68px; background:url(../images/btn_14.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_5{margin-right:0}
+#header ul.menu li.btn_5 a{width:74px; background:url(../images/btn_5.png) 0 0 no-repeat; }
+#header ul.menu li.btn_5 a:hover{width:74px; background:url(../images/btn_5_over.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_21 a{width:113px; 
+background:url(../images/btn_21a.png) 0 0 no-repeat;
+	margin-right: 0px;
+}
+#header ul.menu li.btn_21 a:hover{width:130px; background:url(../images/btn_21.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_22 a{width:130px; background:url(../images/btn_22a.png) 0 0 no-repeat;
+	margin-right: 12px;
+}
+#header ul.menu li.btn_22 a:hover{width:130px; background:url(../images/btn_22.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_23 a{width:110px; background:url(../images/btn_23a.png) 0 0 no-repeat; }
+#header ul.menu li.btn_23 a:hover{width:110px; background:url(../images/btn_23.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_25 a{width:68px; background:url(../images/btn_25a.png) 0 0 no-repeat; }
+#header ul.menu li.btn_25 a:hover{width:68px; background:url(../images/btn_25.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_26 a{width:80px; background:url(../images/btn_26a.png) 0 0 no-repeat; }
+#header ul.menu li.btn_26 a:hover{width:80px; background:url(../images/btn_26.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_31 a{width:103px; 
+background:url(../images/btn_31a.png) 0 0 no-repeat;
+	margin-right: 0px;
+}
+#header ul.menu li.btn_31 a:hover{width:100px; background:url(../images/btn_31.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_32 a{width:140px;background:url(../images/btn_32a.png) 0 0 no-repeat;
+	margin-right: 0px;
+}
+#header ul.menu li.btn_32 a:hover{width:140px; background:url(../images/btn_32.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_33 a{width:100px; background:url(../images/btn_33a.png) 0 0 no-repeat; }
+#header ul.menu li.btn_33 a:hover{width:100px; background:url(../images/btn_33.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_34 a{width:140px; background:url(../images/btn_34a.png) 0 0 no-repeat; }
+#header ul.menu li.btn_34 a:hover{width:140px; background:url(../images/btn_34.png) 0 0 no-repeat;}
+
+#header ul.menu li.btn_35 a{width:140px; background:url(../images/btn_35a.png) 0 0 no-repeat; }
+#header ul.menu li.btn_35 a:hover{width:140px; background:url(../images/btn_35.png) 0 0 no-repeat;}
+
+
+/* CONTENT1 */
+
+#content{width:716px; position:relative; clear:both;}
+
+#leftPan{width:404px; float:left; margin:0 58px 0 16px; display:inline}
+#rightPan{width:225px; float:left; margin:7px 0 0 0;}
+
+#welcome h2{height:50px; position:relative; background:url(../images/h_welcome.gif) 0 0 no-repeat; margin-bottom:19px}
+#welcome img{float:left; margin-right:9px}
+#welcome p{margin-left:6px}
+#welcome p#side{float:left; width:335px; margin-left:0}
+
+#why h2{height:26px; position:relative; background:url(../images/h_why.gif) 0 0 no-repeat; margin-bottom:10px}
+#why ul{width:218px; margin-left:5px}
+#why ul li{font:10px/14px Tahoma, sans-serif; background:url(../images/arrow1.gif) 0 3px no-repeat; padding-left:17px; height:22px;}
+#why ul li a{color:#6f8592; text-decoration:none;}
+#why ul li a:hover{color:#6f8592; text-decoration:underline;}
+
+.clear#end1{height:15px}
+
+/* CONTENT2 */
+
+#content2{width:716px; height:177px; position:relative; clear:both; background:url(../images/b_plans.gif) 0 0 repeat-x}
+
+#c2_01{width:189px; float:left; margin:13px 0 0 27px; display:inline}
+#c2_01 h2{height:49px; position:relative; background:url(../images/h_plan1.jpg) 0 0 no-repeat; margin-bottom:23px}
+#c2_02{width:204px; float:left; margin:13px 58px 0 0;}
+#c2_02 h2{height:49px; position:relative; background:url(../images/h_plan2.jpg) 0 0 no-repeat; margin-bottom:23px}
+#c2_03{width:218px; float:left; margin:13px 0 0 0;}
+#c2_03 h2{height:49px; position:relative; background:url(../images/h_included.gif) 0 0 no-repeat; margin-bottom:23px}
+
+#content2 ul li{font:10px/14px Tahoma, sans-serif; background:url(../images/check.gif) 0 3px no-repeat; padding-left:16px; height:18px;}
+#content2 ul li a{color:#fff; text-decoration:none;}
+#content2 ul li a:hover{color:#fff; text-decoration:underline;}
+
+#c2_01 ul{margin-left:7px}
+#c2_02 ul{margin-left:30px}
+#c2_03 ul{margin-left:2px}
+
+/* FOOTER */
+
+#footer{height:76px; clear:both; width:716px;}
+#footer p{padding: 23px 0 0 0; font:10px/14px Tahoma, sans-serif; font-weight:normal; text-align:center; color:#fff;}
+#footer p a{font:10px/14px Tahoma, sans-serif; font-weight:normal; color:#FFF; text-decoration:none; padding: 0 3px }
+#footer p a:hover{text-decoration:underline; color:#FFF}

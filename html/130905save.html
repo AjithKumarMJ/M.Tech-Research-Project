@@ -1,0 +1,16 @@
+﻿ protected void DropDownList2_SelectedIndexChanged1(object sender, EventArgs e)
+    {
+        SqlCommand cmd = new SqlCommand("SELECT [vmname] FROM [vm] WHERE (([Status] = 'Pending') AND ([pm] = '" + DropDownList2.SelectedItem.ToString() + "'))", con);
+
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+        DataTable dt = new DataTable();
+        da.Fill(dt);
+
+        DropDownList1.DataTextField = "vmname";
+        DropDownList1.DataValueField = "vmname";
+
+        DropDownList1.DataSource = dt;
+        DropDownList1.DataBind();
+    }
+}

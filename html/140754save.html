@@ -1,0 +1,99 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Petshop.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>RIO PETS</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Content/web/images/favicon.ico">
+    <link rel="shortcut icon" href="../Content/web/images/favicon.ico">
+    <link rel="stylesheet" href="../Content/web/css/style.css">
+    <link rel="stylesheet" href="../Content/web/css/slider.css">
+    <script src="../Content/web/js/jquery.js"></script>
+    <script src="../Content/web/js/jquery-migrate-1.1.1.js"></script>
+    <script src="../Content/web/js/superfish.js"></script>
+    <script src="../Content/web/js/jquery.carouFredSel-6.1.0-packed.js"></script>
+    <script src="../Content/web/js/jquery.equalheights.js"></script>
+    <script src="../Content/web/js/jquery.easing.1.3.js"></script>
+    <script src="../Content/web/js/tms-0.4.1.js"></script>
+    <script src="../Content/web/js/jquery.ui.totop.js"></script>
+    <script>
+        $(window).load(function () {
+            $('.slider')._TMS({
+                show: 0,
+                pauseOnHover: false,
+                prevBu: '.prev',
+                nextBu: '.next',
+                playBu: false,
+                duration: 800,
+                preset: 'fade',
+                pagination: true, //'.pagination',true,'<ul></ul>'
+                pagNums: false,
+                slideshow: 8000,
+                numStatus: false,
+                banners: true,
+                waitBannerAnimation: false,
+                progressBar: false
+            })
+        });
+        $(window).load(function () {
+            $('.carousel1').carouFredSel({
+                auto: false,
+                prev: '.prev',
+                next: '.next',
+                width: 960,
+                items: {
+                    visible: {
+                        min: 3,
+                        max: 3
+                    },
+                    height: 'auto',
+                    width: 300,
+                },
+                responsive: true,
+                scroll: 1,
+                mousewheel: false,
+                swipe: {
+                    onMouse: true,
+                    onTouch: true
+                }
+            });
+        });
+        jQuery(document).ready(function () {
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header>
+            <div class="container_12">
+                <div class="grid_12">
+                    <h1><a href="Home.aspx">
+                        <img src="../Content/web/images/logo.png" alt=""></a> </h1>
+                    <div class="menu_block">
+                        <nav>
+                            <ul class="sf-menu">
+                                <li class="current"><a href="Home.aspx">Home</a></li>
+                                <li><a href="AdUserdetails.aspx">User Details</a></li>
+                                <li><a href="Adbookingdetails.aspx">Booking Details</a></li>
+                                <li><a href="Home.aspx">Logout </a></li>
+                            </ul>
+                        </nav>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
